@@ -13,11 +13,13 @@ r21: {
     - Return null NPE in selectFirst() if list is empty (pr-5)
     - Fix Moxie toolkit download URL (pr-6)
     - Be more careful with primitive numeric type rollovers
-    changes: ~
+    changes:
+    - Revised EnumId interface to support generic types
     additions:
     - Add syntax for IN and NOT IN (pr-7)
     - Add support for nested AND/OR conditions (pr-8)
     - Add support for mapping SQL BOOLEAN to primitive numeric types, not just object numeric types
+    - Add support for customizing EnumId mapping, you can now map enum constants to values of your choice as long as they are a standard type
     dependencyChanges: ~
     contributors:
     - James Moger
